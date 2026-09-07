@@ -10,7 +10,7 @@
   --accent-color: #D97706;        /* Tono Acento / Ámbar */
   
   --bg-color: #F8FAFC;            /* Fondo de la Web */
-  --card-bg: #FFFFFF;             /* Fondo de Tarjetas y Formulario */
+  --card-bg: #ffffff;             /* Fondo de Tarjetas y Formulario */
   --text-primary: #1E293B;        /* Texto Principal */
   --text-muted: #64748B;          /* Texto Secundario */
   --border-color: #E2E8F0;        /* Color de Bordes */
@@ -321,18 +321,21 @@ body {
 }
 
 .form-wrapper {
+  --form-accent: #ec4899;
+  --form-accent-dark: #be185d;
+  --form-focus: rgba(236, 72, 153, 0.18);
   background: var(--card-bg);
   padding: 40px;
   border-radius: var(--radius-lg);
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(236, 72, 153, 0.2);
+  box-shadow: 0 20px 30px -10px rgba(236, 72, 153, 0.12);
   max-width: 800px;
   margin: 0 auto;
 }
 
 .badge-accent {
-  background: rgba(217, 119, 6, 0.12);
-  color: var(--accent-color);
+  background: rgba(236, 72, 153, 0.12);
+  color: var(--form-accent);
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -410,8 +413,8 @@ textarea {
 .input-icon input:focus,
 .input-icon select:focus,
 textarea:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 4px var(--focus-ring);
+  border-color: var(--form-accent);
+  box-shadow: 0 0 0 4px var(--form-focus);
   background-color: #FFF;
 }
 
@@ -436,7 +439,7 @@ textarea:focus {
 }
 
 .radio-card input {
-  accent-color: var(--primary-color);
+  accent-color: var(--form-accent);
 }
 
 /* CHECKBOX */
@@ -449,7 +452,7 @@ textarea:focus {
 
 .checkbox-group input {
   margin-top: 3px;
-  accent-color: var(--primary-color);
+  accent-color: var(--form-accent);
 }
 
 .checkbox-group label {
@@ -466,14 +469,14 @@ textarea:focus {
 }
 
 .btn-submit {
-  background-color: var(--primary-color);
+  background-color: var(--form-accent);
   color: white;
   justify-content: center;
   padding: 14px;
 }
 
 .btn-submit:hover {
-  background-color: var(--primary-hover);
+  background-color: var(--form-accent-dark);
 }
 
 .btn-block {
