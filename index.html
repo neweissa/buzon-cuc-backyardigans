@@ -190,6 +190,15 @@
             <textarea id="mensaje" rows="5" placeholder="Describe tu idea o sugerencia con detalle..." required maxlength="500" oninput="updateCharCount()"></textarea>
             <div class="char-count"><span id="charNum">0</span>/500 caracteres</div>
           </div>
+          
+          <div class="form-group margin-top">
+            <label for="imagen"> Adjuntar Evidencia o imagen (Opcional)</label>
+            <div class="input-icon">
+              <i class="ri-image-line"></i>
+              <input type="file" id="imagen" accept="image/*">
+            </div>  
+          </div>
+          <small style="display: block; margin-top: 0.25rem; color: #6c757d;">Formatos permitidos: JPG, PNG, GIF. Tamaño máximo: 5MB.</small>
 
           <div class="form-group checkbox-group">
             <input type="checkbox" id="terminos" required>
